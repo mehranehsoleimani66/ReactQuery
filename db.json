@@ -1,0 +1,24 @@
+{
+  "product": [
+    {
+      "id": 7,
+      "name": "SoundWave Plus",
+      "description": "محصول شماره 7",
+      "year_of_creation": 2022,
+      "rating": 4.7,
+      "views": 5400,
+      "country": "Sweden",
+      "price": 249.99
+    },
+    {
+      "id": 8,
+      "name": "MegaSpeaker XL",
+      "description": "محصول شماره 8",
+      "year_of_creation": 2023,
+      "rating": 4.8,
+      "views": 7800,
+      "country": "Canada",
+      "price": 179.99
+    }
+  ]
+}
