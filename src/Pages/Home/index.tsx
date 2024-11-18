@@ -1,31 +1,25 @@
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
-
-interface ProductState {
-  id: number;
-  name: string;
-  description: string;
-  year_of_creation: number;
-  rating: number;
-  views: number;
-  country: string;
-  price: number;
-}
+import { useState } from 'react';
+import List from '../../components/products/list';
+import Error from '../../components/shared/error';
+import Loading from '../../components/shared/loading';
+import { useGetProduct } from '../../ui/hook/products';
 
 const Page = () => {
-  const { data, isError, isLoading } = useQuery({
-    queryKey: ['product'],
-    queryFn: async () => {
-      const url = `http://localhost:5007/product`;
-      const response = await axios.get<ProductState>(url);
-      console.log(response.data);
-      return response.data;
-    },
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const { data, isError, isLoading, refetch } = useGetProduct({
+    searchQuery,
   });
   return (
     <div>
-      {isLoading && <>loading .....</>}
-      {isError && <>error is happening</>}{' '}
+      {isLoading && <Loading />}
+      {isError && <Error />}
+      {data && <List products={data} />}
+      <input
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="rounded p-3 bg-gray-400 mt-2"
+      />
     </div>
   );
 };
