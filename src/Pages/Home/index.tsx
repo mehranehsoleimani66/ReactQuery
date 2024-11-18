@@ -11,10 +11,10 @@ const Page = () => {
     searchQuery,
   });
   return (
-    <div>
+    <div className=" grid grid-cols-3">
       {isLoading && <Loading />}
       {isError && <Error />}
-      {data && <List products={data} />}
+      {data && <List products={data} refetch={refetch} />}
       <input
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}

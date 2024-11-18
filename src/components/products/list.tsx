@@ -3,14 +3,15 @@ import Item from './item';
 
 interface ListProps {
   products: ProductState[];
+  refetch: any;
 }
 
-const List: React.FC<ListProps> = ({ products }) => {
+const List: React.FC<ListProps> = ({ products, refetch }) => {
   return (
     products &&
     products.map((product) => (
-      <section className="grid grid-cols-3 gap-4">
-        <Item key={product.id} product={product} />
+      <section className="grid grid-cols-4 ">
+        <Item key={product.id} product={product} refetch={refetch} />
       </section>
     ))
   );

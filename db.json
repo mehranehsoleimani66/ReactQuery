@@ -1,69 +1,19 @@
 {
   "product": [
     {
-      "id": 1,
-      "name": "SoundWave Plus",
-      "description": "محصول شماره 1",
-      "year_of_creation": 2022,
-      "rating": 4.7,
-      "views": 5400,
-      "country": "Sweden",
-      "price": 249.99
-    },
-    {
-      "id": 2,
-      "name": "MegaSpeaker XL",
-      "description": "محصول شماره 8",
-      "year_of_creation": 2023,
-      "rating": 4.8,
-      "views": 7800,
-      "country": "Canada",
-      "price": 179.99
-    },
-    {
-      "id": 3,
-      "name": "MegaSpeaker XL54",
-      "description": "محصول شماره 8",
-      "year_of_creation": 2023,
-      "rating": 4.8,
-      "views": 7800,
-      "country": "Canada",
-      "price": 179.99
-    },
-    {
-      "id": 4,
-      "name": "MegaSpeaker",
-      "description": "محصول شماره 8",
-      "year_of_creation": 2023,
-      "rating": 4.8,
-      "views": 7800,
-      "country": "Canada",
-      "price": 179.99
-    },
-    {
-      "id": 5,
-      "name": "SoundWave Plus",
-      "description": "محصول شماره 1",
-      "year_of_creation": 2022,
-      "rating": 4.7,
-      "views": 5400,
-      "country": "Sweden",
-      "price": 249.99
-    },
-    {
-      "id": 6,
-      "name": "SoundWave Plus",
-      "description": "محصول شماره 1",
-      "year_of_creation": 2022,
-      "rating": 4.7,
-      "views": 5400,
-      "country": "Sweden",
-      "price": 249.99
-    },
-    {
       "id": 7,
       "name": "SoundWave Plus",
-      "description": "محصول شماره 1",
+      "description": "محصول شماره 7",
+      "year_of_creation": 2022,
+      "rating": 4.7,
+      "views": 5400,
+      "country": "Sweden",
+      "price": 249.99
+    },
+    {
+      "id": 8,
+      "name": "SoundWave Plus",
+      "description": "محصول شماره 7",
       "year_of_creation": 2022,
       "rating": 4.7,
       "views": 5400,
